@@ -1,28 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Public Sans', sans-serif; /* Global font family */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
+    background: url('images/IndexHeader.png') no-repeat center bottom;
+    background-size: cover;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
     text-align: center;
+    font-size: 2.25rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.8rem; /* Adjust the font size for smaller screens */
+        padding-bottom: 20px; /* Increase space at the bottom if needed */
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: transform 0.2s, color 0.2s; /* Smooth animation */
+}
+
+.nav-link:hover {
+    transform: scale(1.1); /* Slightly enlarges the link */
+    color: #217c8a; /* Changes color on hover */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #0d574d; /* Keeps the active link highlighted */
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.leftcolumn {
+    flex: 3;
+    min-width: 300px;
+}
+
+.rightcolumn {
+    background-color: #89bec7; /* Blue background */
+    padding: 20px; /* Adds some space inside the box */
+    border-radius: 10px; /* Makes the corners rounded, if you like */
+    color: rgb(0, 0, 0); /* Makes text white for good contrast */
+    width: 200px; /* Adjust as needed */
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+    }
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Content with image styling */
+.content-with-image {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px;
+}
+
+.blog-img {
+    display: block;
+    width: 100%; /* Ensures the image scales with the screen size */
+    max-width: 400px; /* Maximum width for the image */
+    height: auto;
+}
+@media (max-width: 1000px) {
+    .content-with-image {
+        flex-direction: column; /* Stacks the image and text when the screen is narrow */
+        align-items: center; /* Centers both the image and the text */
+    }
+}
+
+.text-to-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-to-right h2 {
+    margin: 0; /* Removes extra space around h2 */
+    font-size: 2rem;
+    text-align: left; /* Title aligned to the left */
+    line-height: 1; /* Ensures that the line-height doesn't push the title down */
+}
+
+.blog-body {
+    text-align: left;
+    font-family: 'Public Sans', serif;
+    color: black;
+    background-color: white;
+}
+
+/*Bio styling */
+.bio-img {
+    width: 200px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-top: 30px;
+}
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: no wrap;
+}
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stacks the image and text when the screen is narrow */
+        align-items: center; /* Centers both the image and the text */
+    }
+}
+
+.bio-text {
+    font-family: 'Public Sans', sans-serif;
+    column-count: 1; /* Prevents the text from breaking into columns */
+    line-height: 1.6;
+    text-align: left;
+}
+
+/*Resume styling */
+.resume_h1{
+    font-family: "Alfa Slab One", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; /* Centers text inside .bio-text */
+    width: 80%;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.resume_h2{
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; /* Centers text inside .bio-text */
+    width: 80%;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.resume_body_bold{
+    font-family: 'Public Sans', sans-serif;
+    text-align: left; 
+    width: 80%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.resume_body_neutral{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    text-align: left; 
+    width: 80%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.resume_footnote{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 0.9 rem;
+    text-align: center; 
+    width: 80%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Navigation styling */
 nav ul {
+    text-align: center;
     list-style: none;
     padding: 0;
 }
 
 nav ul li {
+    font-size: large;
     display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
