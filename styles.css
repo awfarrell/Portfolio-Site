@@ -118,15 +118,15 @@ header {
 
 /* Styling for the blog headline on index */
 .blog-headline {
-    align: center;
-    font-size: 3%; /* Make it bigger */
+    box-align: center;
+    font-size: 2rem; /* Make it bigger */
     font-weight: bold; /* Bolder text */
     color: #0d574d; /* Change to the color you want */
 }
 
 .blog-img-index {
     max-width: 200px;
-    max: height 400px; 
+    max-height: 400px; 
     width: 100%;
     height: auto;
     border-radius: 20px; /* optional for rounded edges */
