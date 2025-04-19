@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Get In Losers, We're Writing Code</title>
+    <link>https://annewalkerfarrell.com/blog</link>
+    <description>Formerly: cartoons | Currently: computer science</description>
+    <lastBuildDate>Sat, 19 Apr 2025 21:45:29 GMT</lastBuildDate>
+
+    <item>
+      <title>Anne Farrell</title>
+      <link>https://annewalkerfarrell.com/blog/category-animation-and-transition.html</link>
+      <pubDate>Sat, 19 Apr 2025 21:45:29 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Anne Farrell</title>
+      <link>https://annewalkerfarrell.com/blog/category-school.html</link>
+      <pubDate>Sat, 19 Apr 2025 21:45:29 GMT</pubDate>
+      <description></description>
+    </item>
+  </channel>
+</rss>
