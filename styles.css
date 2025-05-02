@@ -60,13 +60,18 @@ header {
     max-width: 1000px;
     margin-left: auto !important;
     margin-right: auto !important;
+
+    background-color: #b3d4da; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .rightcolumn {
-    background-color: #89bec7; /* Blue background */
+    background-color: #b3d4da; /* Blue background */
     padding: 20px; /* Adds some space inside the box */
     border-radius: 10px; /* Makes the corners rounded, if you like */
-    color: rgb(0, 0, 0); /* Makes text white for good contrast */
+    color: white; /* Makes text white for good contrast */
     width: 200px; /* Adjust as needed */
     flex: 1;
     min-width: 200px;
@@ -82,6 +87,26 @@ header {
     box-sizing: border-box; /* Ensures the line size is calculated including padding and borders */
 }
 
+.leftcolumn a,
+.leftcolumn a:visited,
+.rightcolumn a,
+.rightcolumn a:visited {
+    color:#0d574d; 
+    font-weight: 600;
+}
+.leftcolumn a:hover,
+.rightcolumn a:hover {
+    color: #217c8a;
+}
+
+.rightcolumn-img-index {
+    max-width: 200px;
+    max-height: 200px; 
+    width: auto;
+    align: center;
+    border-radius: 20px; /* optional for rounded edges */
+}
+
 /* Mobile responsiveness */
 @media screen and (max-width: 800px) {
     .row {
@@ -95,7 +120,7 @@ header {
 
 /* Card styling */
 .card {
-    background-color: white;
+    background-color: transparent;
     padding: 20px;
     margin-top: 20px;
 }
@@ -121,7 +146,7 @@ header {
     box-align: center;
     font-size: 2rem; /* Make it bigger */
     font-weight: bold; /* Bolder text */
-    color: #0d574d; /* Change to the color you want */
+    color: black;/* Change to the color you want */
 }
 
 .blog-img-index {
@@ -172,7 +197,7 @@ header {
     text-align: left;
     font-family: 'Public Sans', serif;
     color: black;
-    background-color: white;
+    background-color: transparent;
 }
 
 /*Bio styling */
