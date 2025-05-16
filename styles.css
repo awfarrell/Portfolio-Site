@@ -172,6 +172,20 @@ header {
     font-family: 'Public Sans', sans-serif; /* Global font family */
 }
 
+.blog-bullets {
+    list-style-type: disc; /* or square, circle, etc */
+    padding-left: 2rem;    /* indent the bullets from the margin */
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #333;           /* darker text */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.blog-bullets li {
+    margin-bottom: 0.5rem;
+}
+
 
 @media (max-width: 1000px) {
     .content-with-image {
