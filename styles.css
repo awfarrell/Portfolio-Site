@@ -50,7 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: nowrap;
 }
 
@@ -72,8 +72,10 @@ header {
     padding: 20px; /* Adds some space inside the box */
     border-radius: 10px; /* Makes the corners rounded, if you like */
     color: white; /* Makes text white for good contrast */
-    width: 200px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
     flex: 1;
+    margin-left: auto !important;
+    margin-right: auto !important;
     min-width: 200px;
     max-width: 500px;
 }
@@ -103,7 +105,7 @@ header {
     max-width: 200px;
     max-height: 200px; 
     width: auto;
-    align: center;
+    align: left;
     border-radius: 20px; /* optional for rounded edges */
 }
 
